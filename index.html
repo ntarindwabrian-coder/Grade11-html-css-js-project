@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 11 IT Interactive Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    
+    <header>
+        <h1>Interactive Website for Grade 11 IT</h1>
+    </header>
+
+    <main>
+        <section class="theme-switcher">
+            <h2>Theme Switcher</h2>
+            <p>Toggle between Light and Dark themes.</p>
+            <button id="theme-toggle-btn">Switch to Dark Mode</button>
+        </section>
+
+        <div class="image-container">
+            <img id="main-image" src="c:\Users\PC\Pictures\Saved Pictures\INTERACTING PICTURE.png" alt="A default web design graphic">
+            <p class="image-caption">This image represents the website's main function.</p>
+        </div>
+
+        <section class="validation-form">
+            <h2>User Registration Form</h2>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="username">Username (min 4 chars):</label>
+                    <input type="text" id="username" name="username" class="input-field">
+                    <small class="error-message" id="username-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="input-field">
+                    <small class="error-message" id="email-error"></small>
+                </div>
+                
+                <button type="submit" id="submit-btn">Register</button>
+                <p id="form-success" class="success-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Grade 11 IT Practical</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+
+:root {
+    --bg-color-light: #e4e4e4;
+    --text-color-light: #333;
+    --header-bg-light: #fc7703;
+    --button-bg-light: #01ed2c;
+    --button-hover-light: #218838;
+
+    --bg-color-dark: #2c3e50;
+    --text-color-dark: #ecf0f1;
+    --header-bg-dark: #34495e;
+    --button-bg-dark: #3498db;
+    --button-hover-dark: #2980b9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    transition: background-color 0.4s, color 0.4s; 
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+
+.light-theme {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+.light-theme header {
+    background: var(--header-bg-light);
+}
+
+.light-theme button {
+    background-color: var(--button-bg-light);
+}
+
+.light-theme button:hover { 
+    background-color: var(--button-hover-light);
+}
+
+
+.dark-theme {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+.dark-theme header {
+    background: var(--header-bg-dark);
+}
+
+.dark-theme button {
+    background-color: var(--button-bg-dark);
+}
+
+.dark-theme button:hover { 
+    background-color: var(--button-hover-dark);
+}
+
+header {
+    color: white;
+    padding: 20px; 
+    text-align: center;
+}
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+#theme-toggle-btn {
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+
+.form-group { 
+    margin-bottom: 15px;
+}
+
+.input-field { 
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.error-message { 
+    display: block;
+    color: #e74c3c;
+    font-size: 0.85em;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: #2ecc71;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.image-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#main-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 5px solid;
+    border-color: var(--header-bg-light); 
+    border-radius: 10px;
+    transition: border-color 0.4s;
+}
+
+.dark-theme #main-image {
+    border-color: var(--header-bg-dark);
+}
